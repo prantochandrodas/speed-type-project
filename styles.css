@@ -30,10 +30,11 @@ body {
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  padding-left: 20px;
 }
-
+/* fixed text overflow problem  */
 #display {
-  height: 100px;
+  height: 150px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -43,6 +44,7 @@ body {
   background-color: #171717;
   border: 2px solid #9dffad;
   border-radius: 15px;
+  
 }
 
 #countdown {
