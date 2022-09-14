@@ -70,6 +70,7 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
+  // fixing the desimal problem 
   const intTimeSpent = parseInt(timeTaken);
 
   // show result modal
@@ -136,6 +137,7 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
+  // fixing the desemal problem
   const intTimeSpent = parseInt(timeSpent);
 
 
