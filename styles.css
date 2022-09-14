@@ -65,7 +65,7 @@ body {
   position: fixed;
   top: 10%; 
   left: 10%;
-  transform: translate(-50%, -50%);
+  transform: translate(75%, 20%);
   height: 250px;
   width: 400px;
   background-color: #171717;
@@ -142,9 +142,10 @@ button {
 }
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+row-gap: 20px;
+  column-gap: 20px;
 }
 
 .card {
@@ -152,6 +153,7 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -188,5 +190,9 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+  #result{
+    position: fixed;
+    transform: translate(-8%, 86%);
   }
 }
