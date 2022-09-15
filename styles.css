@@ -202,4 +202,11 @@ button {
     position: fixed;
     transform: translate(-8%, 86%);
   }
+  #histories {
+    /* fixing the card problem  */
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+  }
+  
 }

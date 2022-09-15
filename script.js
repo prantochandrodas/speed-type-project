@@ -17,12 +17,15 @@ fetch("./texts.json")
   .then((data) => {
     questionText = data[Math.floor(Math.random() * data.length)];
     question.innerHTML = questionText;
-  
+
   });
 
 // checks the user typed character and displays accordingly
 const typeController = (e) => {
   const newLetter = e.key;
+
+
+
   console.log(newLetter);
 
   // Handle backspace press
